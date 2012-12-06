@@ -11,6 +11,8 @@
 	  fetch="git://github.com/mozilla/" />
   <remote name="mozillaorg" 
       fetch="https://git.mozilla.org" />
+  <remote name="B2GCDMA" 
+      fetch="git://github.com/B2GCDMA/" />
   <default revision="refs/tags/android-4.0.4_r2.1"
            remote="linaro"
            sync-j="4" />
@@ -20,12 +22,12 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
-  <project path="gaia" name="releases/gaia" remote="mozillaorg" revision="master" />
-  <project path="gecko" name="releases/gecko" remote="mozillaorg" revision="master" />
-  <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="master" />
-  <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
-  <project path="hardware/ril" name="platform_hardware_ril" remote="b2g" revision="master"/>
-  <project path="external/qemu" name="platform_external_qemu" remote="b2g" revision="master"/>
+  <project path="gaia" name="gaia" remote="B2GCDMA" revision="CDMA" />
+  <project path="gecko" name="releases-mozilla-central" remote="B2GCDMA" revision="CDMA" />
+  <project path="gonk-misc" name="gonk-misc" remote="B2GCDMA" revision="CDMA" />
+  <project path="rilproxy" name="rilproxy" remote="B2GCDMA" revision="master" />
+  <project path="hardware/ril" name="platform_hardware_ril" remote="B2GCDMA" revision="master"/>
+  <project path="external/qemu" name="platform_external_qemu" remote="B2GCDMA" revision="master"/>
   <project path="external/moztt" name="moztt" remote="b2g" revision="master" />
 
   <!-- Stock Android things -->
