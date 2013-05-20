@@ -12,7 +12,7 @@
   <remote  name="linaro"
            fetch="git://android.git.linaro.org/" />
   <remote name="mozillaorg"
-      fetch="https://git.mozilla.org" />
+      fetch="https://git.mozilla.org/releases" />
   <remote name="B2GCDMA" 
       fetch="git://github.com/B2GCDMA/" />
   <remote name="keven"
@@ -26,10 +26,10 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
-  <project path="gaia" name="gaia" remote="B2GCDMA" revision="CDMA" />
-  <project path="gecko" name="releases-mozilla-central" remote="B2GCDMA" revision="CDMA" />
+  <project path="gaia" name="gaia.git" remote="mozillaorg" revision="master" />
+  <project path="gecko" name="gecko.git" remote="mozillaorg" revision="master" />
   <project path="gonk-misc" name="gonk-misc" remote="B2GCDMA" revision="CDMA" />
-  <project path="rilproxy" name="rilproxy" remote="B2GCDMA" revision="master" />
+  <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
   <project path="librecovery" name="librecovery" remote="keven" revision="master" />
   <project path="external/moztt" name="moztt" remote="b2g" revision="master" />
 
